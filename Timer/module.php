@@ -71,7 +71,15 @@
 		
 
 		// Add the buttons for the test center
-		$form['actions'][] = Array("type" => "Button", "label" => "Refresh", "onClick" => 'TIMER_RefreshInformation($id);');
+		$form['actions'][] = Array(	"type" => "Button", 
+									"label" => "Refresh", 
+									"onClick" => 'TIMER_RefreshInformation($id);',
+									"columns" => Array(
+										Array(	"caption" => "Status variable ID",
+												"name" => "statusVarId"
+										)
+									)
+							);
 
 		// Return the completed form
 		return json_encode($form);
