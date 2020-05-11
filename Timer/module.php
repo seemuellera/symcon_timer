@@ -67,7 +67,7 @@
 		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");		
 
 		// Add the buttons for the test center
-		$form['actions'][] = Array("type" => "Button", "label" => "Run next cycle", "onClick" => 'TIMER_RefreshInformation($id);');
+		$form['actions'][] = Array("type" => "Button", "label" => "Refresh", "onClick" => 'TIMER_RefreshInformation($id);');
 
 		// Return the completed form
 		return json_encode($form);
@@ -88,7 +88,7 @@
 
 	public function RefreshInformation() {
 
-		$this->LogMessage("Refresh in Progress", DEBUG);
+		$this->LogMessage("Refresh in Progress", "DEBUG");
 
 
 	}
