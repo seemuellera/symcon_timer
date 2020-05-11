@@ -67,19 +67,26 @@
 		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");
 		
 		// Sensors
-		$form['elements'][] = Array("type" => "List", "name" => "SensorVariables", "caption" => "Sensor Variables", "add" => "true" );
+		$form['elements'][] = Array(	
+								"type" => "List", 
+								"name" => "SensorVariables", 
+								"caption" => "Sensor Variables", 
+								"add" => "true",
+								"columns" => Array(
+									Array(
+										"caption" => "Status Variable id",
+										"name" => "sensorStatusVarId"
+									),
+									Array(
+										"caption" => "Status Variable name",
+										"name" => "sensorStatusVarName"
+									)
+								)
+							);
 		
 
 		// Add the buttons for the test center
-		$form['actions'][] = Array(	"type" => "Button", 
-									"label" => "Refresh", 
-									"onClick" => 'TIMER_RefreshInformation($id);',
-									"columns" => Array(
-										Array(	"caption" => "Status variable ID",
-												"name" => "statusVarId"
-										)
-									)
-							);
+		$form['actions'][] = Array(	"type" => "Button", "label" => "Refresh", "onClick" => 'TIMER_RefreshInformation($id);');
 
 		// Return the completed form
 		return json_encode($form);
