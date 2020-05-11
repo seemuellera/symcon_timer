@@ -1,0 +1,14 @@
+{
+  "id": "{29EC8C37-4924-484F-8EB0-B73D69BD38B0}",
+  "name": "Timer",
+  "type": 3,
+  "vendor": "Andreas",
+  "aliases": 
+  [
+	  "Timer"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "TIMER"
+}
