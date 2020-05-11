@@ -64,7 +64,11 @@
 
 		// Add the Elements
 		$form['elements'][] = Array("type" => "NumberSpinner", "name" => "RefreshInterval", "caption" => "Refresh Interval");
-		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");		
+		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");
+		
+		// Sensors
+		$form['elements'][] = Array("type" => "List", "name" => "SensorVariables", "caption" => "Sensor Variables", "add" => "true" );
+		
 
 		// Add the buttons for the test center
 		$form['actions'][] = Array("type" => "Button", "label" => "Refresh", "onClick" => 'TIMER_RefreshInformation($id);');
