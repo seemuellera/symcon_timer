@@ -75,7 +75,9 @@
 								"columns" => Array(
 									Array(
 										"caption" => "Status Variable id",
-										"name" => "sensorStatusVarId"
+										"name" => "sensorStatusVarId",
+										"add" => "0",
+										"edit" => "SelectInstance"
 									),
 									Array(
 										"caption" => "Status Variable name",
