@@ -78,7 +78,7 @@
 										"name" => "sensorStatusVarId",
 										"add" => "0",
 										"edit" => Array(
-											"type" => "SelectInstance",
+											"type" => "SelectVariable",
 											"caption" => "Select Status Variable ID"
 										)
 									),
