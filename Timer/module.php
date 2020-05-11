@@ -81,7 +81,8 @@
 									),
 									Array(
 										"caption" => "Status Variable name",
-										"name" => "sensorStatusVarName"
+										"name" => "sensorStatusVarName",
+										"add" => "-unresolved-"
 									)
 								)
 							);
