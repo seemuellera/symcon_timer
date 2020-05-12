@@ -69,8 +69,8 @@
 		// Sensors
 		$form['elements'][] = Array(	
 								"type" => "List", 
-								"name" => "SensorVariables", 
-								"caption" => "Sensor Variables", 
+								"name" => "Binary Sensors", 
+								"caption" => "Binary Sensor Variables", 
 								"add" => "true",
 								"columns" => Array(
 									Array(
@@ -80,13 +80,15 @@
 										"edit" => Array(
 											"type" => "SelectVariable",
 											"caption" => "Select Status Variable ID"
-										)
+										),
+										"width" => "100px"
 									),
 									Array(
 										"caption" => "Status Variable name",
 										"name" => "sensorStatusVarName",
 										"add" => "-unresolved-"
-									)
+									),
+									"width" => "auto"
 								)
 							);
 		
@@ -115,7 +117,8 @@
 
 		$this->LogMessage("Refresh in Progress", "DEBUG");
 
-
+		$formData = $this->ReadPropertyString("BinarySensors");
+		print_r(json_decode($formData);
 	}
 
 	public function RequestAction($Ident, $Value) {
@@ -135,3 +138,4 @@
 
     }
 ?>
+
