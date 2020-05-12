@@ -118,7 +118,7 @@
 		$this->LogMessage("Refresh in Progress", "DEBUG");
 
 		$formData = $this->ReadPropertyString("BinarySensors");
-		print_r(json_decode($formData);
+		print_r(json_decode($formData));
 	}
 
 	public function RequestAction($Ident, $Value) {
