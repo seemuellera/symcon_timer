@@ -86,9 +86,9 @@
 									Array(
 										"caption" => "Status Variable name",
 										"name" => "sensorStatusVarName",
-										"add" => "-unresolved-"
-									),
-									"width" => "auto"
+										"add" => "-unresolved-",
+										"width" => "auto"
+									)
 								)
 							);
 		
