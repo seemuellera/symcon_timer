@@ -21,7 +21,7 @@ class Timer extends IPSModule {
 		// Properties
 		$this->RegisterPropertyString("Sender","Timer");
 		$this->RegisterPropertyInteger("RefreshInterval",0);
-		$this->RegisterPropertyInteger("TargetStatusVariableId");
+		$this->RegisterPropertyInteger("TargetStatusVariableId",0);
 		$this->RegisterPropertyBoolean("DebugOutput",false);
 
 		// Variables
