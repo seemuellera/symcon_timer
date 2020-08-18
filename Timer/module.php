@@ -67,7 +67,7 @@
 		$form['elements'][] = Array("type" => "NumberSpinner", "name" => "RefreshInterval", "caption" => "Refresh Interval");
 		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");
 		
-		$form['elements'][] = Array("type" => "SelectVariable", "name" => "TargetStatusVariableId", "Caption" => "Status vaiable of target device");
+		$form['elements'][] = Array("type" => "SelectVariable", "name" => "TargetStatusVariableId", "caption" => "Status vaiable of target device");
 		// Sensors
 		/*
 		$form['elements'][] = Array(	
