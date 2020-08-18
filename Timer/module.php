@@ -1,27 +1,27 @@
 <?php
 
-    // Klassendefinition
-    class Timer extends IPSModule {
+// Klassendefinition
+class Timer extends IPSModule {
  
-        // Der Konstruktor des Moduls
-        // Überschreibt den Standard Kontruktor von IPS
-        public function __construct($InstanceID) {
-            // Diese Zeile nicht löschen
-            parent::__construct($InstanceID);
- 
-            // Selbsterstellter Code
-        }
- 
-        // Überschreibt die interne IPS_Create($id) Funktion
-        public function Create() {
-            
+	// Der Konstruktor des Moduls
+	// Überschreibt den Standard Kontruktor von IPS
+	public function __construct($InstanceID) {
+		// Diese Zeile nicht löschen
+		parent::__construct($InstanceID);
+
+		// Selbsterstellter Code
+	}
+
+	// Überschreibt die interne IPS_Create($id) Funktion
+	public function Create() {
+		
 		// Diese Zeile nicht löschen.
-        parent::Create();
+		parent::Create();
 
 		// Properties
 		$this->RegisterPropertyString("Sender","Timer");
 		$this->RegisterPropertyInteger("RefreshInterval",0);
-		$this->RegisterPropertyInteger("TargetStatusVariableId",0);
+		$this->RegisterPropertyInteger("TargetStatusVariableId");
 		$this->RegisterPropertyBoolean("DebugOutput",false);
 
 		// Variables
@@ -141,6 +141,6 @@
 		}
 	}
 
-    }
+}
 ?>
 
