@@ -21,6 +21,7 @@
 		// Properties
 		$this->RegisterPropertyString("Sender","Timer");
 		$this->RegisterPropertyInteger("RefreshInterval",0);
+		$this->RegisterPropertyInteger("TargetStatusVariableId",0);
 		$this->RegisterPropertyBoolean("DebugOutput",false);
 
 		// Variables
@@ -66,7 +67,9 @@
 		$form['elements'][] = Array("type" => "NumberSpinner", "name" => "RefreshInterval", "caption" => "Refresh Interval");
 		$form['elements'][] = Array("type" => "CheckBox", "name" => "DebugOutput", "caption" => "Enable Debug Output");
 		
+		$form['elements'][] = Array("type" => "SelectVariable", "name" => "TargetStatusVariableId", "Caption" => "Status vaiable of target device");
 		// Sensors
+		/*
 		$form['elements'][] = Array(	
 								"type" => "List", 
 								"name" => "Binary Sensors", 
@@ -91,7 +94,7 @@
 									)
 								)
 							);
-		
+		*/
 
 		// Add the buttons for the test center
 		$form['actions'][] = Array(	"type" => "Button", "label" => "Refresh", "onClick" => 'TIMER_RefreshInformation($id);');
@@ -117,8 +120,10 @@
 
 		$this->LogMessage("Refresh in Progress", "DEBUG");
 
+		/*
 		$formData = $this->ReadPropertyString("BinarySensors");
 		print_r(json_decode($formData));
+		*/
 	}
 
 	public function RequestAction($Ident, $Value) {
