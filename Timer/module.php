@@ -16,7 +16,7 @@
         public function Create() {
             
 		// Diese Zeile nicht löschen.
-            	parent::Create();
+        parent::Create();
 
 		// Properties
 		$this->RegisterPropertyString("Sender","Timer");
@@ -33,7 +33,7 @@
 		// Timer
 		$this->RegisterTimer("RefreshInformation", 0 , 'TIMER_RefreshInformation($_IPS[\'TARGET\']);');
 
-        }
+    }
 
 	public function Destroy() {
 
